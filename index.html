@@ -68,11 +68,7 @@
 		<link rel="stylesheet" href="css/DarkBlue.css">
     </head>
 
-<body>
-
-        <!--[if lt IE 7]>
-                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+ <body>
 
  
 
@@ -122,15 +118,15 @@
                                 
          <div class="image-holder one" id="pic_prof_1" style="display:none">
         
-                <img class="head-image up circle" src="images/img/up.png" width="150" height="150" alt="" />
-                <img class="head-image up-left circle" src="images/img/upleft.png" width="150" height="150" alt="" />
-                <img class="head-image left circle" src="images/img/left.png" width="150" height="150" alt="" />
-                <img class="head-image down-left circle" src="images/img/downleft.png" width="150" height="150" alt="" />
-                <img class="head-image down circle" src="images/img/down.png" width="150" height="150" alt="" />
-                <img class="head-image down-right circle" src="images/img/downright.png" width="150" height="150" alt="" />
-                <img class="head-image right circle" src="images/img/right.png" width="150" height="150" alt="" />
-                <img class="head-image up-right circle" src="images/img/upright.png" width="150" height="150" alt="" />
-                <img class="head-image front circle" src="images/img/front.png" width="150" height="150" alt="" />        </div>
+                <img class="head-image up circle" src="img/up.png" alt="" style="z-index: 0;" width="150" height="150">
+                <img class="head-image up-left circle" src="img/upleft.png" alt="" style="z-index: 0;" width="150" height="150">
+                <img class="head-image left circle" src="img/left.png" alt="" style="z-index: 0;" width="150" height="150">
+                <img class="head-image down-left circle" src="img/downleft.png" alt="" style="z-index: 0;" width="150" height="150">
+                <img class="head-image down circle" src="img/down.png" alt="" style="z-index: 0;" width="150" height="150">
+                <img class="head-image down-right circle" src="img/downright.png" alt="" style="z-index: 1;" width="150" height="150">
+                <img class="head-image right circle" src="img/right.png" alt="" style="z-index: 0;" width="150" height="150">
+                <img class="head-image up-right circle" src="img/upright.png" alt="" style="z-index: 0;" width="150" height="150">
+                <img class="head-image front circle" src="img/front.png" alt="" style="z-index: 0;" width="150" height="150">        </div>
         
         <!-- style for simple image profile -->		
    		<div class="circle-img" id="pic_prof_2" style="display:block"></div>
@@ -176,26 +172,26 @@
                             <div class="col-md-9 flexy_content" style="padding-left: 0;padding-right: 0;">
 
                                 <!-- verticalTab menu -->
-                                <div id="verticalTab">
+                                <div id="verticalTab" style="display: block; width: 100%; margin: 0px;" class="resp-vtabs">
 
                                     <ul class="resp-tabs-list">
-                                        <li class="tabs-profile hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a profile" data-tab-name="profile">			
+                                        <li class="tabs-profile hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a profile resp-tab-item resp-tab-active" data-tab-name="profile" aria-controls="tab_item-0" role="tab">			
                                             <span class="tite-list">profile</span>
                                             <i class="fa fa-user icon_menu icon_menu_active"></i>                                        </li>
 
-                                        <li class="tabs-resume hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="resume"> 
+                                        <li class="tabs-resume hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a resp-tab-item" data-tab-name="resume" aria-controls="tab_item-1" role="tab"> 
                                             <span class="tite-list">resume</span>
                                             <i class="fa fa-tasks icon_menu"></i>                                        </li>
 
-                                        <li class="tabs-portfolio hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="portfolio"> 
+                                        <li class="tabs-portfolio hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a resp-tab-item" data-tab-name="portfolio" aria-controls="tab_item-2" role="tab"> 
                                             <span class="tite-list">portfolio</span>
                                             <i class="fa fa-briefcase icon_menu"></i>                                        </li>
 
-                                        <li class="tabs-blog hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="blog">
+                                        <li class="tabs-blog hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a resp-tab-item" data-tab-name="blog" aria-controls="tab_item-3" role="tab">
                                             <span class="tite-list">packages</span>
                                             <i class="fa fa-gift icon_menu"></i>                                        </li>
 
-                                        <li class="tabs-contact hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="contact" style="margin-bottom: 48px !important;"> 
+                                        <li class="tabs-contact hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a resp-tab-item" data-tab-name="contact" style="margin-bottom: 48px !important;" aria-controls="tab_item-4" role="tab"> 
                                             <span class="tite-list">contact</span>
                                             <i class="fa fa-envelope icon_menu"></i>                                        </li>
 
@@ -207,10 +203,12 @@
 
 
                                     <!-- resp-tabs-container --> 
-                                    <div class="resp-tabs-container">
+                                    <div class="resp-tabs-container" style="height: 580px;">
 
                                         <!-- profile -->
-                                        <div id="profile" class="content_2">
+                                        <h2 class="resp-accordion hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a resp-tab-active" role="tab" aria-controls="tab_item-0"><i class="hi-icon fa fa-user icon_menu icon_menu_active"></i><span class="tite-list-resp">			
+                                            profile
+                                                                                    </span><i class="fa fa-chevron-up arrow-tabs"></i></h2><div id="profile" class="content_2 resp-tab-content resp-tab-content-active mCustomScrollbar _mCS_11" style="display: block; height: 580px;" aria-labelledby="tab_item-0"><div class="mCustomScrollBox mCS-dark-2" id="mCSB_11" style="position:relative; height:100%; overflow:hidden; max-width:100%;"><div class="mCSB_container mCS_no_scrollbar" style="position: relative; top: 0px;">
                                             <!-- .title -->
 <h1 class="h-bloc">Profile - About Me</h1>
 
@@ -281,10 +279,10 @@
 
     <div class="col-md-6 profile-r">
 
-        <div class="cycle-slideshow">
-            <img src="img/about_1.jpg" alt="" />
-            <img src="img/about_2.jpg" alt="" />
-            <img src="img/about_3.png" alt="" />        </div>
+        <div class="cycle-slideshow" style="position: relative;"><img src="img/about_1.jpg" alt="" style="top: 0px; left: 0px; opacity: 1; z-index: 100; position: static; visibility: hidden; display: block;" class="cycle-slide cycle-sentinel">
+            
+            
+                    <img src="img/about_1.jpg" alt="" style="position: absolute; top: 0px; left: 0px; display: block; z-index: 100; opacity: 0; visibility: hidden;" class="cycle-slide"><img src="img/about_2.jpg" alt="" style="z-index: 99; position: absolute; top: 0px; left: 0px; visibility: visible; display: block; opacity: 1;" class="cycle-slide cycle-slide-active"><img src="img/about_3.png" alt="" style="position: absolute; top: 0px; left: 0px; display: block; opacity: 0; z-index: 97; visibility: hidden;" class="cycle-slide"></div>
     </div>
 </div>
 
@@ -297,11 +295,13 @@
     
      
     <div class="clear"></div>
-                                        </div>
+                                        </div><div class="mCSB_scrollTools" style="position: absolute; display: none;"><div class="mCSB_draggerContainer"><div class="mCSB_dragger" style="position: absolute; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="position:relative;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
                                         <!-- End .profile -->
 
                                         <!-- .resume -->
-                                        <div id="resume" class="content_2">
+                                        <h2 class="resp-accordion hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" role="tab" aria-controls="tab_item-1"><i class="hi-icon fa fa-tasks icon_menu"></i><span class="tite-list-resp"> 
+                                            resume
+                                                                                    </span><i class="fa fa-chevron-down arrow-tabs"></i></h2><div id="resume" class="content_2 resp-tab-content _mCS_2 _mCS_7 mCustomScrollbar _mCS_12" aria-labelledby="tab_item-1" style="height: 580px;"><div class="mCustomScrollBox mCS-dark-2" id="mCSB_12" style="position:relative; height:100%; overflow:hidden; max-width:100%;"><div class="mCSB_container mCS_no_scrollbar" style="position: relative; top: 0px;">
                                             <!-- .title -->
 <h1 class="h-bloc">Resume - Personal Info</h1> 
 
@@ -501,7 +501,7 @@
         <ul class="attributes">
             <li class="first">
                 <h5>BS(IT) <span class="duration"><i class="fa fa-calendar color"></i> 2007 - 2011</span></h5>
-                <h6><span class="fa fa-book"></span> University of AJ&K , Kotli Campus</h6>
+                <h6><span class="fa fa-book"></span> University of AJ&amp;K , Kotli Campus</h6>
                 <p>CGPA : 3.52<br>
 				Marks Percentage: 76%</p>
             </li>
@@ -544,11 +544,13 @@
   <div style="clear: both"></div>  
   
     
-                                        </div>
+                                        </div><div class="mCSB_scrollTools" style="position: absolute; display: none;"><div class="mCSB_draggerContainer"><div class="mCSB_dragger" style="position: absolute; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="position:relative;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
                                         <!-- End .resume -->
 
                                         <!-- .portfolio -->
-                                        <div id="portfolio" class="content_2">
+                                        <h2 class="resp-accordion hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" role="tab" aria-controls="tab_item-2"><i class="hi-icon fa fa-briefcase icon_menu"></i><span class="tite-list-resp"> 
+                                            portfolio
+                                                                                    </span><i class="fa fa-chevron-down arrow-tabs"></i></h2><div id="portfolio" class="content_2 resp-tab-content _mCS_3 _mCS_8 mCustomScrollbar _mCS_13" aria-labelledby="tab_item-2" style="height: 580px;"><div class="mCustomScrollBox mCS-dark-2" id="mCSB_13" style="position:relative; height:100%; overflow:hidden; max-width:100%;"><div class="mCSB_container mCS_no_scrollbar" style="position: relative; top: 0px;">
                                                 
                                             <!-- .title -->
                                             <h1 class="h-bloc">Portfolio - Latest Works</h1>
@@ -569,7 +571,7 @@
     <!-- #portfoliolist -->
     <div id="portfoliolist">
 	
-      <div class="view view-first portfolio logo" data-cat="catWeb">
+      <div class="view view-first portfolio logo mix_all" data-cat="catWeb" style="display: inline-block; opacity: 1;">
             <img src="img/portfolio/EvaxExpress.jpg">
             <div class="mask">
                 <h2>Evax Express</h2>
@@ -579,7 +581,7 @@
                 	<i class="fa fa-search"></i>                </a>            </div>
         </div>
 		
-		<div class="view view-first portfolio logo" data-cat="catWeb">
+		<div class="view view-first portfolio logo mix_all" data-cat="catWeb" style="display: inline-block; opacity: 1;">
             <img src="img/portfolio/OUD-Profile.jpg">
             <div class="mask">
                 <h2>Oud Kalakas</h2>
@@ -588,7 +590,7 @@
                 <a href="img/portfolio/OUD-Profile.jpg" rel="portfolio" class="info open-imag">
                 	<i class="fa fa-search"></i>                </a>            </div>
         </div>
-		<div class="view view-first portfolio logo" data-cat="catWeb">
+		<div class="view view-first portfolio logo mix_all" data-cat="catWeb" style="display: inline-block; opacity: 1;">
             <img src="img/portfolio/Rada-Profile.jpg">
             <div class="mask">
                 <h2>Rada Trading</h2>
@@ -597,7 +599,7 @@
                 <a href="img/portfolio/Rada-Profile.jpg" rel="portfolio" class="info open-imag">
                 	<i class="fa fa-search"></i>                </a>            </div>
         </div>
-		<div class="view view-first portfolio logo" data-cat="catWeb">
+		<div class="view view-first portfolio logo mix_all" data-cat="catWeb" style="display: inline-block; opacity: 1;">
             <img src="img/portfolio/alRashid.jpg">
             <div class="mask">
                 <h2>Al Rashid Events</h2>
@@ -606,7 +608,7 @@
                 <a href="img/portfolio/alRashid.jpg" rel="portfolio" class="info open-imag">
                 	<i class="fa fa-search"></i>                </a>            </div>
         </div>
-		<div class="view view-first portfolio logo" data-cat="catWeb">
+		<div class="view view-first portfolio logo mix_all" data-cat="catWeb" style="display: inline-block; opacity: 1;">
             <img src="img/portfolio/Notochem.jpg">
             <div class="mask">
                 <h2>NoToChem</h2>
@@ -616,7 +618,7 @@
                 	<i class="fa fa-search"></i>                </a>            </div>
         </div>
 		
-		<div class="view view-first portfolio logo" data-cat="catWeb">
+		<div class="view view-first portfolio logo mix_all" data-cat="catWeb" style="display: inline-block; opacity: 1;">
             <img src="img/portfolio/fdp-group.jpg">
             <div class="mask">
                 <h2>FDP Group</h2>
@@ -625,7 +627,7 @@
                 <a href="img/portfolio/fdp-group.jpg" rel="portfolio" class="info open-imag">
                 	<i class="fa fa-search"></i>                </a>            </div>
         </div>
-	  <div class="view view-first portfolio logo" data-cat="catWeb">
+	  <div class="view view-first portfolio logo mix_all" data-cat="catWeb" style="display: inline-block; opacity: 1;">
             <img src="img/portfolio/TransfastC-Profile.jpg">
             <div class="mask">
                 <h2>Trans Fast Building Contracting</h2>
@@ -634,7 +636,7 @@
                 <a href="img/portfolio/TransfastC-Profile.jpg" rel="portfolio" class="info open-imag">
                 	<i class="fa fa-search"></i>                </a>            </div>
         </div> 
-		<div class="view view-first portfolio logo" data-cat="catWeb">
+		<div class="view view-first portfolio logo mix_all" data-cat="catWeb" style="display: inline-block; opacity: 1;">
             <img src="img/portfolio/TransfastLab-Profile.jpg">
             <div class="mask">
                 <h2>Transfast Engineering Laboratory</h2>
@@ -643,7 +645,7 @@
                 <a href="img/portfolio/TransfastLab-Profile.jpg" rel="portfolio" class="info open-imag">
                 	<i class="fa fa-search"></i>                </a>            </div>
         </div>
-	    <div class="view view-first portfolio logo" data-cat="catWeb">
+	    <div class="view view-first portfolio logo mix_all" data-cat="catWeb" style="display: inline-block; opacity: 1;">
             <img src="img/portfolio/MoversDubai-Profile.jpg">
             <div class="mask">
                 <h2>ARZ Movers</h2>
@@ -652,7 +654,7 @@
                 <a href="img/portfolio/MoversDubai-Profile.jpg" rel="portfolio" class="info open-imag">
                 	<i class="fa fa-search"></i>                </a>            </div>
         </div> 
-    <div class="view view-first portfolio logo" data-cat="catWeb">
+    <div class="view view-first portfolio logo mix_all" data-cat="catWeb" style="display: inline-block; opacity: 1;">
             <img src="img/portfolio/RoyalMarble-Profile.jpg">
             <div class="mask">
                 <h2>Royal Marble</h2>
@@ -661,7 +663,7 @@
                 <a href="img/portfolio/RoyalMarble-Profile.jpg" rel="portfolio" class="info open-imag">
                 	<i class="fa fa-search"></i>                </a>            </div>
         </div>
-          <div class="view view-first portfolio logo" data-cat="catWeb">
+          <div class="view view-first portfolio logo mix_all" data-cat="catWeb" style="display: inline-block; opacity: 1;">
             <img src="img/portfolio/AandP-Profile.jpg">
             <div class="mask">
                 <h2>A&amp;P Group</h2>
@@ -671,7 +673,7 @@
                 	<i class="fa fa-search"></i>                </a>            </div>
         </div> 
         
-        <div class="view view-first portfolio catWeb" data-cat="catWeb">
+        <div class="view view-first portfolio catWeb mix_all" data-cat="catWeb" style="display: inline-block; opacity: 1;">
             <img src="img/portfolio/AKD-Profile.jpg">
             <div class="mask">
                 <h2>Ashish Kohli Design</h2>
@@ -681,7 +683,7 @@
                 	<i class="fa fa-search"></i>                </a>
                          </div>
         </div> 
-         <div class="view view-first portfolio catWeb" data-cat="catWeb">
+         <div class="view view-first portfolio catWeb mix_all" data-cat="catWeb" style="display: inline-block; opacity: 1;">
             <img src="img/portfolio/alesio-profile.jpg">
             <div class="mask">
                 <h2>Alessio LLC</h2>
@@ -700,11 +702,13 @@
         <div class="clear"></div>
   </div>
     <!-- #images/portfoliolist -->
-</div>                                            </div>
+</div>                                            </div><div class="mCSB_scrollTools" style="position: absolute; display: none;"><div class="mCSB_draggerContainer"><div class="mCSB_dragger" style="position: absolute; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="position:relative;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
                                         <!-- End .portfolio -->
 
                                         <!-- .blog -->
-                                        <div id="blog" class="content_2">
+                                        <h2 class="resp-accordion hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" role="tab" aria-controls="tab_item-3"><i class="hi-icon fa fa-gift icon_menu"></i><span class="tite-list-resp">
+                                            packages
+                                                                                    </span><i class="fa fa-chevron-down arrow-tabs"></i></h2><div id="blog" class="content_2 resp-tab-content _mCS_4 _mCS_9 mCustomScrollbar _mCS_14" aria-labelledby="tab_item-3" style="height: 580px;"><div class="mCustomScrollBox mCS-dark-2" id="mCSB_14" style="position:relative; height:100%; overflow:hidden; max-width:100%;"><div class="mCSB_container mCS_no_scrollbar" style="position: relative; top: 0px;">
 										
 										<div class="row" id="services">
 		<div class="col-md-12">
@@ -727,7 +731,7 @@
                 <div class="service">
                     <div class="service-icon"> <img src="img/ser2.png" style=" height:60px;"></div>
                     <div class="service-detail">
-                        <h6>Website Design & Re-design  </h6>
+                        <h6>Website Design &amp; Re-design  </h6>
                         <p>I have a wide range of website designing skills spanning multiple platforms.</p>
                     </div>
                 </div>
@@ -746,7 +750,7 @@
                     <div class="service-icon"><img src="img/ser4.png" style=" height:60px;"></div>
                     <div class="service-detail">
                         <h6>eCommerce Development</h6>
-                        <p>Specialized in designing & developing the most beautiful, modern eCommerce websites </p>
+                        <p>Specialized in designing &amp; developing the most beautiful, modern eCommerce websites </p>
                     </div>
                 </div>
             </div>
@@ -772,11 +776,13 @@
     </div>
                                             
  
-                                            </div>
+                                            </div><div class="mCSB_scrollTools" style="position: absolute; display: none;"><div class="mCSB_draggerContainer"><div class="mCSB_dragger" style="position: absolute; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="position:relative;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
                                             <!-- End .blog -->
 
                                             <!-- .contact -->
-                                            <div id="contact" class="content_2">
+                                            <h2 class="resp-accordion hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" role="tab" aria-controls="tab_item-4"><i class="hi-icon fa fa-envelope icon_menu"></i><span class="tite-list-resp"> 
+                                            contact
+                                                                                    </span><i class="fa fa-chevron-down arrow-tabs"></i></h2><div id="contact" class="content_2 resp-tab-content _mCS_5 _mCS_10 mCustomScrollbar _mCS_15" aria-labelledby="tab_item-4" style="height: 580px;"><div class="mCustomScrollBox mCS-dark-2" id="mCSB_15" style="position:relative; height:100%; overflow:hidden; max-width:100%;"><div class="mCSB_container mCS_no_scrollbar" style="position: relative; top: 0px;">
                                                 
                                         <h1 class="h-bloc">Contact - Contact Me</h1>
 
@@ -784,7 +790,7 @@
                                         <div class="row">
 
                                             <div class="col-lg-12">
-                                                <div id="map1"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26663.345284381634!2d74.01079185494915!3d33.347087821417325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391fd0a010b01303%3A0xe64e17dc9e1f785!2sKhuiratta!5e0!3m2!1sen!2s!4v1618941059542!5m2!1sen!2s" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+                                                <div id="map1"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26663.345284381634!2d74.01079185494915!3d33.347087821417325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391fd0a010b01303%3A0xe64e17dc9e1f785!2sKhuiratta!5e0!3m2!1sen!2s!4v1618941059542!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" width="100%" height="250"></iframe></div>
                                             </div>  
 
                                             <div class="col-lg-12">
@@ -799,7 +805,7 @@
                                                             </div>
 
                                                             <ul>
-                                                                <li><span class="span-info"><i class="fa fa-map-marker"></i> Adress:</span> Khuiratta Kotli, AJ&amp;K<br /><br /></li>
+                                                                <li><span class="span-info"><i class="fa fa-map-marker"></i> Adress:</span> Khuiratta Kotli, AJ&amp;K<br><br></li>
                                                                 <li><span class="span-info"><i class="fa fa-envelope"></i> Email:</span> tauseefraja28@gmail.com</li>
                                                                 <li><span class="span-info"><i class="fa fa-phone"></i> Phone:</span> +92 344 5411191</li>
                                                       
@@ -844,11 +850,11 @@
                                                             <form method="post" id="contactform" name="contactForm">
                                                                 <p class="form-group" id="contact-name">
                                                                     <label for="name">Your Name</label>
-                                                                    <input type="text" name="name" class="form-control name-contact" id="inputSuccess" placeholder="Name..." />
+                                                                    <input type="text" name="name" class="form-control name-contact" id="inputSuccess" placeholder="Name...">
                                                                 </p>
                                                                 <p class="form-group" id="contact-email"> 
                                                                     <label for="email">Your Email</label>
-                                                                    <input type="text" name="email" class="form-control email-contact" id="inputSuccess" placeholder="Email..." />
+                                                                    <input type="text" name="email" class="form-control email-contact" id="inputSuccess" placeholder="Email...">
                                                                 </p>
 
                                                                 <p class="form-group" id="contact-message">
@@ -867,7 +873,7 @@
                                                     </div>
                                                 </div>
                                             </div>  
-                                        </div>                                            </div>
+                                        </div>                                            </div><div class="mCSB_scrollTools" style="position: absolute; display: none;"><div class="mCSB_draggerContainer"><div class="mCSB_dragger" style="position: absolute; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="position:relative;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
                                             <!-- End .contact -->
                                         </div>
                                         <!-- End #resp-tabs-container --> 
@@ -913,7 +919,7 @@
 
         <!-- Js | switcher -->
         <!-- Credits: http://themeforest.net/user/FlexyCodes -->
-        <script type="text/javascript" src="js/switcher.js"></script>	
+        <script type="text/javascript" src="js/switcher.js"></script><script type="text/javascript" src="js/jsSwitcher/jquery.cookie.js"></script>	
 
         <!-- Js | mCustomScrollbar -->
         <!-- Credits: http://manos.malihu.gr/jquery-custom-content-scroller -->
@@ -983,5 +989,6 @@
         <!--[if lt IE 9]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
+
 </body>
 </html>
