@@ -106,6 +106,46 @@
             }
 
         </script>
+	    
+	    <script>
+$(document).ready(function(){
+  $(".tabs-profile").click(function(){
+    $("#profile").show();
+	$("#resume").hide();
+	$("#portfolio").hide();
+	$("#blog").hide();
+	$("#contact").hide();
+  });
+  $(".tabs-resume").click(function(){
+    $("#profile").hide();
+	$("#resume").show();
+	$("#portfolio").hide();
+	$("#blog").hide();
+	$("#contact").hide();
+  });
+  $(".tabs-portfolio").click(function(){
+    $("#profile").hide();
+	$("#resume").hide();
+	$("#portfolio").show();
+	$("#blog").hide();
+	$("#contact").hide();
+  });
+  $(".tabs-blog").click(function(){
+    $("#profile").hide();
+	$("#resume").hide();
+	$("#portfolio").hide();
+	$("#blog").show();
+	$("#contact").hide();
+  });
+  $(".tabs-contact").click(function(){
+    $("#profile").hide();
+	$("#resume").hide();
+	$("#portfolio").hide();
+	$("#blog").hide();
+	$("#contact").show();
+  });
+});
+</script>
         <style>
             @media only screen and (max-width : 991px){
                 .resp-vtabs .resp-tabs-container {
