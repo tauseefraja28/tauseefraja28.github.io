@@ -3061,4 +3061,11 @@ div.ppt {
 #contact #profile_social {
 	display: block !important;
 }
-
+@media(max-width: 480px){
+.resp-tabs-container {
+  height: auto !important;
+}
+#profile , #resume , #portfolio , #blog , #contact {
+  height: auto !important;
+}	
+}
